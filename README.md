@@ -1,4 +1,4 @@
-worklight-skebby-smsnotifications
+SMS Notifications for IBM Worklight Developer Platform
 =================================
 
-SMS Push Notifications with IBM Worklight and Skebby SMS aggregator
+Example of SMS Push Notifications with IBM Worklight and Skebby SMS aggregator
