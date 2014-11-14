@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Skebby SMS Gateway --> 
+<sms:config xmlns:sms="http://www.worklight.com/sms/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+   <gateway id="skebby" hostname="gateway.skebby.it" port="80" 
+       		programName="send.php" toParamName="recipient" textParamName="text">
+       		
+       	<!-- Valid methods for SMS type:
+			send_sms_classic
+			send_sms_classic_report
+			send_sms_basic
+			test_send_sms_classic
+			test_send_sms_classic_report
+			test_send_sms_basic       	
+       	-->	
+		<parameter encode="true" name="method" value="send_sms_classic"/>
+		<!-- Your username at Skebby -->
+		<parameter encode="true" name="username" value="USERNAME"/>
+		<!-- Your password at Skebby -->
+		<parameter encode="true" name="password" value="PASSWORD"/>
+		<!-- An alphanumeric sender for the SMS -->
+		<parameter encode="true" name="senderString" value="SENDER"/> 
+	</gateway>
+	
+</sms:config>
